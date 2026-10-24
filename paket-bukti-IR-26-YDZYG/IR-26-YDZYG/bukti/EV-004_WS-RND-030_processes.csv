@@ -1,0 +1,22 @@
+﻿Node,CommandLine,Name,ParentProcessId,ProcessId
+WS-RND-030,,System,0,4
+WS-RND-030,\SystemRoot\System32\smss.exe,smss.exe,4,412
+WS-RND-030,%SystemRoot%\system32\csrss.exe ObjectDirectory=\Windows,csrss.exe,548,560
+WS-RND-030,wininit.exe,wininit.exe,548,648
+WS-RND-030,C:\Windows\system32\services.exe,services.exe,648,720
+WS-RND-030,C:\Windows\system32\lsass.exe,lsass.exe,648,740
+WS-RND-030,C:\Windows\system32\svchost.exe -k DcomLaunch -p,svchost.exe,720,1516
+WS-RND-030,C:\Windows\system32\svchost.exe -k netsvcs -p,svchost.exe,720,1972
+WS-RND-030,C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted -p,svchost.exe,720,2020
+WS-RND-030,"""C:\Program Files\EDR\edr-agent.exe""",edr-agent.exe,720,2900
+WS-RND-030,C:\Windows\Explorer.EXE,explorer.exe,5012,3312
+WS-RND-030,"""C:\Program Files\Google\Chrome\Application\chrome.exe""",chrome.exe,5012,3800
+WS-RND-030,"""C:\Program Files\Google\Chrome\Application\chrome.exe"" --type=renderer",chrome.exe,5012,4352
+WS-RND-030,"""C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE""",OUTLOOK.EXE,5012,4528
+WS-RND-030,"""C:\Program Files\WindowsApps\MSTeams\ms-teams.exe""",ms-teams.exe,5012,4880
+WS-RND-030,"""C:\Users\novi.rahmawati\AppData\Local\Microsoft\OneDrive\OneDrive.exe"" /background",OneDrive.exe,5012,5136
+WS-RND-030,"""C:\Users\novi.rahmawati\AppData\Local\Programs\Microsoft VS Code\Code.exe""",Code.exe,5012,5344
+WS-RND-030,"""C:\Users\novi.rahmawati\AppData\Local\Temp\OneDriveUpd.exe"" copy ""D:\Arsip\foto_keluarga_66.7z"" pd:backup --transfers 4 --stats 30s",OneDriveUpd.exe,6004,5688
+WS-RND-030,"""C:\Windows\system32\cmd.exe""",cmd.exe,5012,6004
+WS-RND-030,\??\C:\Windows\system32\conhost.exe 0x4,conhost.exe,5012,6184
+WS-RND-030,"wmic process get Name,ProcessId,ParentProcessId,CommandLine /format:csv",WMIC.exe,2290,9400

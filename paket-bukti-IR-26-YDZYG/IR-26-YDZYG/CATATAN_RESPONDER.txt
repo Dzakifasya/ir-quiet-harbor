@@ -1,0 +1,13 @@
+LOG AKTIVITAS RESPONDER — IR-26-YDZYG
+Responder : Dzaki Fasya (110225165)
+Tanggal   : 12-11-2026
+Zona waktu: WIB (UTC+7), jam referensi tim
+------------------------------------------------------------------------
+20:27:49  DLP & proxy memicu alert: unggahan volume besar dari WS-RND-030 (10.41.40.172) ke layanan penyimpanan publik.
+21:01:44  Tim CSIRT tiba di lantai R&D. WS-RND-030 menyala dan tidak terkunci; novi.rahmawati sedang di pantry.
+21:03:16  Surat tugas investigasi ditandatangani Direktur, lingkup dibatasi pada aset perusahaan, dan Legal mendampingi tim.
+21:04:46  Tanpa konfrontasi, live response dilakukan di WS-RND-030 dengan pendampingan HR selagi novi.rahmawati berada di pantry. HR & Legal diberi tahu.
+21:06:48  Jam sistem WS-RND-030 menunjukkan 21:11:13, jam referensi tim 21:06:48. Selisih +00:04:25 (jam sistem − referensi) dicatat sebagai baris tersendiri. Jam sistem tidak diubah.
+21:11:30  RAM WS-RND-030 (16 GB) diakuisisi dengan WinPmem ke media eksternal; hash SHA-256 dicatat.
+21:32:33  Flashdisk difoto di posisinya, dimasukkan ke kantong anti-statis bersegel, dan dicatat di formulir chain of custody. Pemeriksaan dilakukan di lab melalui write blocker.
+22:31:50  Seluruh bukti di-hash, disegel, dan diserahkan ke evidence custodian.

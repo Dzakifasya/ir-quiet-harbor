@@ -1,0 +1,13 @@
+# Evidence and potentially sensitive material
+*.zip
+*.7z
+*.pcap
+*.evtx
+*.mem
+*.raw
+*.dmp
+*.csv
+*.log
+.env
+secrets/
+evidence/

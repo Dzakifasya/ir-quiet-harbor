@@ -1,0 +1,80 @@
+{
+  "case_id": "IR-26-YDZYG",
+  "operation": "QUIET HARBOR",
+  "examiner": "Dzaki Fasya (110225165)",
+  "hash_algorithm": "SHA-256",
+  "evidence": [
+    {
+      "evidence_id": "EV-001",
+      "filename": "EV-001_PROXY-01_access_w3c.log",
+      "description": "Log web proxy (UTC)",
+      "source": "PROXY-01",
+      "volatile": false,
+      "tool": "Ekspor dari appliance proxy",
+      "acquired_at": "2026-11-12 21:13:44 WIB",
+      "size_bytes": 394124,
+      "sha256": "bf551342923fa1cbb72aee1057159cbc7222b513c7e2a7cdbeda3cafad39c189",
+      "note": null
+    },
+    {
+      "evidence_id": "EV-002",
+      "filename": "EV-002_FS-RND-01_Security_5145.csv",
+      "description": "Audit akses share RnD",
+      "source": "FS-RND-01",
+      "volatile": false,
+      "tool": "EvtxECmd (filter EventId 5145)",
+      "acquired_at": "2026-11-12 21:18:44 WIB",
+      "size_bytes": 88411,
+      "sha256": "c3dd06d287af8000381c8a56171479aee3927fd69cf631e773c48c03cb78a2af",
+      "note": null
+    },
+    {
+      "evidence_id": "EV-003",
+      "filename": "EV-003_WS-RND-030_setupapi.dev.log",
+      "description": "Log instalasi perangkat",
+      "source": "WS-RND-030",
+      "volatile": false,
+      "tool": "KAPE (C:\\Windows\\INF\\setupapi.dev.log)",
+      "acquired_at": "2026-11-12 22:03:44 WIB",
+      "size_bytes": 2998,
+      "sha256": "a1c783a938c5586b684b90483a432f2129cc5a730099a6a2d30901a1a0b30f6a",
+      "note": null
+    },
+    {
+      "evidence_id": "EV-004",
+      "filename": "EV-004_WS-RND-030_processes.csv",
+      "description": "Daftar proses + command line",
+      "source": "WS-RND-030",
+      "volatile": true,
+      "tool": "wmic process (dari USB responder)",
+      "acquired_at": "2026-11-12 21:22:44 WIB",
+      "size_bytes": 1809,
+      "sha256": "0256b4e6d29fa771b52da36a66dd07ff6842830540191803e72f28599090bf53",
+      "note": null
+    },
+    {
+      "evidence_id": "EV-005",
+      "filename": "EV-005_WS-RND-030_memdump.strings.txt",
+      "description": "Strings dari image RAM (16 GB)",
+      "source": "WS-RND-030",
+      "volatile": true,
+      "tool": "WinPmem → strings -a -n 8",
+      "acquired_at": "2026-11-12 21:27:44 WIB",
+      "size_bytes": 62161,
+      "sha256": "3ba248eff08a10c0029b7eb89a57239c64bf1d70904d57016cdafdc3a72797a3",
+      "note": null
+    },
+    {
+      "evidence_id": "EV-006",
+      "filename": "EV-006_USB_listing.tsv",
+      "description": "Listing isi flashdisk",
+      "source": "Flashdisk di meja",
+      "volatile": false,
+      "tool": "FTK Imager + write blocker",
+      "acquired_at": "2026-11-13 00:01:44 WIB",
+      "size_bytes": 586,
+      "sha256": "ad1518142a937d785167ca997a870fe964bf86ea7196c1891932b023436b0308",
+      "note": null
+    }
+  ]
+}

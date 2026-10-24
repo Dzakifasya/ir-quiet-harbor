@@ -1,0 +1,72 @@
+[Device Install Log]
+     OS Version = 10.0.22631
+     Service Pack = 0.0
+     Suite = 0x0100
+     ProductType = 1
+     Architecture = amd64
+
+[BeginLog]
+
+>>>  [Device Install (Hardware initiated) - HID\VID_046D&PID_C534&MI_00\7&142FFD59C26F7363&0&0000]
+>>>  Section start 2026/04/23 20:53:35.865
+     ump: Creating Install Process: DrvInst.exe 20:53:35.593
+     ndv: Retrieving device info...
+     ndv: Setting device parameters...
+     dvi: {Build Driver List} 20:53:35.297
+<<<  Section end 2026/04/23 20:53:36.993
+<<<  [Exit status: SUCCESS]
+
+>>>  [Device Install (Hardware initiated) - USB\VID_0BDA&PID_8153\A002303AED7DDD48]
+>>>  Section start 2026/06/07 15:59:50.254
+     ump: Creating Install Process: DrvInst.exe 15:59:50.693
+     ndv: Retrieving device info...
+     ndv: Setting device parameters...
+     dvi: {Build Driver List} 15:59:50.704
+<<<  Section end 2026/06/07 15:59:51.053
+<<<  [Exit status: SUCCESS]
+
+>>>  [Device Install (Hardware initiated) - USBSTOR\Disk&Ven_Generic&Prod_Flash_Disk&Rev_8.07\5C88052E981770E4&0]
+>>>  Section start 2026/06/13 19:38:52.429
+     ump: Creating Install Process: DrvInst.exe 19:38:52.910
+     ndv: Retrieving device info...
+     ndv: Setting device parameters...
+     dvi: {Build Driver List} 19:38:52.275
+<<<  Section end 2026/06/13 19:38:53.628
+<<<  [Exit status: SUCCESS]
+
+>>>  [Device Install (Hardware initiated) - USBSTOR\Disk&Ven_JetFlash&Prod_Transcend_16GB&Rev_1100\2B73CBBBDFA3EDC5&0]
+>>>  Section start 2026/09/22 23:14:21.435
+     ump: Creating Install Process: DrvInst.exe 23:14:21.617
+     ndv: Retrieving device info...
+     ndv: Setting device parameters...
+     dvi: {Build Driver List} 23:14:21.914
+<<<  Section end 2026/09/22 23:14:22.777
+<<<  [Exit status: SUCCESS]
+
+>>>  [Device Install (Hardware initiated) - USB\VID_0930&PID_6544\A43646A032323C306A00]
+>>>  Section start 2026/11/12 20:00:14.776
+     ump: Creating Install Process: DrvInst.exe 20:00:14.896
+     ndv: Retrieving device info...
+     ndv: Setting device parameters...
+     dvi: {Build Driver List} 20:00:14.269
+<<<  Section end 2026/11/12 20:00:16.421
+<<<  [Exit status: SUCCESS]
+
+>>>  [Device Install (Hardware initiated) - USBSTOR\Disk&Ven_Toshiba&Prod_TransMemory&Rev_PMAP\A43646A032323C306A00&0]
+>>>  Section start 2026/11/12 20:00:15.057
+     ump: Creating Install Process: DrvInst.exe 20:00:15.820
+     ndv: Retrieving device info...
+     ndv: Setting device parameters...
+     dvi: {Build Driver List} 20:00:15.713
+<<<  Section end 2026/11/12 20:00:15.829
+<<<  [Exit status: SUCCESS]
+
+>>>  [Device Install (Hardware initiated) - SWD\WPDBUSENUM\_??_USBSTOR#Disk&Ven_Toshiba&Prod_TransMemory&Rev_PMAP#A43646A032323C306A00&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}]
+>>>  Section start 2026/11/12 20:00:16.565
+     ump: Creating Install Process: DrvInst.exe 20:00:16.155
+     ndv: Retrieving device info...
+     ndv: Setting device parameters...
+     dvi: {Build Driver List} 20:00:16.956
+<<<  Section end 2026/11/12 20:00:17.580
+<<<  [Exit status: SUCCESS]
+

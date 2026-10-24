@@ -1,79 +1,124 @@
-# Incident Response Case Study: QUIET HARBOR
+# IR-QUIET-HARBOR
+### Incident Response & Digital Forensics Portfolio
 
-![Status](https://img.shields.io/badge/status-completed-success)
-![Type](https://img.shields.io/badge/project-academic%20simulation-blue)
-![Focus](https://img.shields.io/badge/focus-DFIR%20%7C%20Incident%20Response-informational)
+<p align="center">
+  <strong>Academic Incident Response Simulation</strong><br>
+  Digital Forensics · Evidence Integrity · Incident Investigation · Incident Documentation
+</p>
 
-> **Academic simulation only.** This repository documents a fictional insider-threat and data-exfiltration exercise completed in a controlled training environment. It is not a real-world investigation, and it does not allege misconduct by any real person or organization.
+---
 
 ## Overview
 
-This case study covers first response and digital-forensics analysis for a simulated suspected data-exfiltration incident involving a research workstation, file-share access, outbound proxy activity, removable media, process execution evidence, and memory artifacts.
+**IR-QUIET-HARBOR** is an academic incident response simulation documenting a structured investigation, evidence-handling considerations, and incident response methodology.
 
-The exercise emphasized evidence preservation, lawful and proportionate scope, timeline reconstruction, cross-source correlation, and transparent handling of an integrity discrepancy.
+This repository presents the investigation process, documentation practices, evidence integrity assessment, chain-of-custody considerations, and lessons learned from a simulated security incident.
 
-## Exercise outcome
+The objective is to demonstrate a disciplined, evidence-driven approach to incident response while maintaining transparency about investigative limitations and findings.
 
-| Evaluation area | Result |
-|---|---:|
-| First-response decisions | 40 / 40 |
-| Evidence analysis | 45 / 45 |
-| Evidence integrity | 15 / 15 |
-| **Overall result** | **100 / 100 — Grade A** |
+> **Project type:** Academic simulation  
+> **Assessment result:** 100/100 — Grade A, according to the automated evaluator  
+> **Focus:** Incident investigation, evidence handling, analysis, and reporting
 
-The score is the result recorded by the exercise's automated evaluator. It reflects performance in this academic simulation, not a professional certification or independent validation of real-world incident-response experience.
+## Objectives
 
-## Scenario at a glance
+- Document a structured incident response workflow.
+- Apply evidence preservation and integrity assessment principles.
+- Maintain clear evidence-handling and chain-of-custody documentation.
+- Distinguish observed findings from assumptions and investigative limitations.
+- Develop actionable lessons learned for future incident response activities.
 
-- **Scenario:** Suspected insider-driven data exfiltration
-- **Environment:** Simulated enterprise research workstation and supporting logs
-- **Evidence sources:** Web-proxy logs, file-share access audit, device-installation logs, process/command-line listing, memory strings, and removable-media listing
-- **Primary analytical tasks:** Correlate account activity, identify the external destination and transfer volume, reconstruct removable-media timing, and review evidence integrity
-- **Key caveat:** One process-list artifact did not match its acquisition-manifest hash and recorded size. That discrepancy was documented, and conclusions relying on that artifact were treated cautiously and correlated with other sources.
+## Investigation Workflow
 
-## Response approach
+```text
+Incident Identification
+        |
+        v
+Evidence Collection & Documentation
+        |
+        v
+Evidence Integrity Assessment
+        |
+        v
+Investigation & Analysis
+        |
+        v
+Incident Documentation
+        |
+        v
+Lessons Learned
+```
 
-1. **Coordinate and define authority.** Confirm written authorization, scope, and appropriate HR/Legal coordination before examining company assets.
-2. **Preserve volatile evidence.** Prioritize memory and other volatile artifacts before lower-volatility sources when operationally appropriate.
-3. **Document clock drift.** Record host time and reference time separately; preserve the original system clock and account for the offset during timeline reconstruction.
-4. **Protect removable media.** Photograph and document the media in place, package it appropriately, and inspect it through a write blocker.
-5. **Correlate evidence.** Compare proxy, file-share, device, process, and memory evidence rather than relying on a single artifact.
-6. **Verify integrity.** Compare cryptographic hashes and recorded sizes against the acquisition manifest; document mismatches and avoid overstating conclusions.
+*This workflow summarizes the project's documentation approach and is not intended to represent every operational step performed in a real-world investigation.*
 
-## Repository contents
+## Repository Structure
 
-- [`docs/incident-summary.md`](docs/incident-summary.md) — sanitized incident summary and findings
-- [`docs/response-methodology.md`](docs/response-methodology.md) — first-response decisions and rationale
-- [`docs/evidence-integrity.md`](docs/evidence-integrity.md) — integrity discrepancy and cautious interpretation
-- [`docs/chain-of-custody.md`](docs/chain-of-custody.md) — sanitized chain-of-custody principles and example
-- [`docs/lessons-learned.md`](docs/lessons-learned.md) — lessons and improvement opportunities
+```text
+ir-quiet-harbor/
+├── README.md
+├── docs/
+│   ├── incident-summary.md
+│   ├── response-methodology.md
+│   ├── evidence-integrity.md
+│   ├── chain-of-custody.md
+│   └── lessons-learned.md
+├── images/
+│   └── README.md
+└── .gitignore
+```
 
-## Skills demonstrated
+### Documentation
 
-- Digital forensics and incident response (DFIR) fundamentals
-- Evidence acquisition and preservation planning
-- Order-of-volatility reasoning
-- Timeline reconstruction and clock-drift correction
-- Log correlation across multiple evidence sources
-- SHA-256 integrity verification
-- Chain-of-custody documentation
-- Careful reporting of limitations and uncertainty
+| Document | Description |
+|---|---|
+| [Incident Summary](docs/incident-summary.md) | High-level overview and investigation summary |
+| [Response Methodology](docs/response-methodology.md) | Incident response approach and investigative methodology |
+| [Evidence Integrity](docs/evidence-integrity.md) | Evidence integrity considerations and limitations |
+| [Chain of Custody](docs/chain-of-custody.md) | Evidence handling and traceability documentation |
+| [Lessons Learned](docs/lessons-learned.md) | Findings, limitations, and improvement opportunities |
 
-## Limitations and ethics
+## Key Competencies Demonstrated
 
-This is a training case study based on a simulated evidence package. Identifiers, personal information, internal network details, exact file names, credentials, and raw evidence values have intentionally been omitted or generalized for public sharing. No raw evidence, passwords, internal IP addresses, or personal identifiers are included.
+- **Incident Response:** Structured investigation and response documentation.
+- **Digital Forensics:** Evidence-aware analysis and documentation.
+- **Evidence Integrity:** Recognition of integrity verification requirements and discrepancies.
+- **Chain of Custody:** Traceability and accountability in evidence handling.
+- **Analytical Reasoning:** Careful interpretation of findings and acknowledgment of uncertainty.
+- **Technical Reporting:** Organized, reproducible, and professional documentation.
 
-The analysis is limited to what the exercise evidence and evaluator supported. A process command line alone does not establish that a transfer completed; conclusions should be corroborated with independent logs and other artifacts.
+## Evidence Integrity & Limitations
 
-## References
+Evidence integrity is a central consideration in this project. Potential inconsistencies are treated as investigative limitations that require careful assessment rather than being ignored or presented as conclusive proof.
 
-- RFC 3227 — *Guidelines for Evidence Collection and Archiving*
-- NIST SP 800-86 — *Guide to Integrating Forensic Techniques into Incident Response*
-- NIST SP 800-61 Rev. 3 — *Incident Response Recommendations and Considerations*
-- ISO/IEC 27037 — *Guidelines for identification, collection, acquisition and preservation of digital evidence*
+The documentation distinguishes between recorded observations, analytical interpretations, and conclusions that cannot be established from the available evidence.
 
-These references are listed as relevant professional guidance; this repository is an academic exercise and does not claim formal compliance or certification.
+No claim of a real-world compromise, successful containment, or production-system remediation is made solely on the basis of this academic exercise.
 
-## Author's note
+## References & Methodological Foundations
 
-This project was completed as an academic incident-response simulation and received a recorded score of **100/100 (Grade A)**. The purpose of this repository is to demonstrate structured reasoning, evidence-handling discipline, and clear technical reporting while protecting sensitive details.
+The project draws on established incident response and digital evidence-handling references, including:
+
+- **NIST SP 800-86** — *Guide to Integrating Forensic Techniques into Incident Response*
+- **NIST SP 800-61 Rev. 3** — *Incident Response Recommendations and Considerations for Cybersecurity Risk Management*
+- **RFC 3227** — *Guidelines for Evidence Collection and Archiving*
+- **ISO/IEC 27037** — Guidelines for identification, collection, acquisition, and preservation of digital evidence
+
+These references provide methodological context. Their inclusion does not imply formal certification or full compliance with every requirement.
+
+## Ethical & Disclosure Statement
+
+This repository is intended for educational and portfolio purposes. Sensitive identifiers, credentials, and unnecessary raw evidence details should not be published.
+
+The project should be interpreted within the limits of its academic simulation environment. Its assessment score reflects the evaluator's result, not an independent certification of professional competency.
+
+## Author
+
+**Dzaki Fasya**  
+Information Technology Student  
+Focus Areas: Cybersecurity · Incident Response · Digital Forensics
+
+---
+
+<p align="center">
+  <sub>Documenting evidence. Preserving integrity. Learning through investigation.</sub>
+</p>
